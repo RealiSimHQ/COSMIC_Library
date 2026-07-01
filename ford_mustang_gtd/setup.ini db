@@ -1,0 +1,474 @@
+[DISPLAY_METHOD]
+SHOW_CLICKS=1
+
+;MAKE SURE TO USE SHOW_CLICKS=0 WITH CPHYS OPTIONS
+
+[GEARS]
+USE_GEARSET=1
+
+/////////////////////////////////////////////////////
+;TYRES
+/////////////////////////////////////////////////////
+
+[PRESSURE_LF]
+SHOW_CLICKS=0
+TAB=TYRES
+NAME=Pressure LF
+MIN=10
+MAX=50
+STEP=1
+POS_X=0
+POS_Y=2
+HELP=HELP_LF_PRESSURE
+
+[PRESSURE_RF]
+SHOW_CLICKS=0
+TAB=TYRES
+NAME=Pressure RF
+MIN=10
+MAX=50
+STEP=1
+POS_X=1
+POS_Y=2
+HELP=HELP_RF_PRESSURE
+
+[PRESSURE_LR]
+SHOW_CLICKS=0
+TAB=TYRES
+NAME=Pressure LR
+MIN=10
+MAX=50
+STEP=1
+POS_X=0
+POS_Y=4
+HELP=HELP_LR_PRESSURE
+
+[PRESSURE_RR]
+SHOW_CLICKS=0
+TAB=TYRES
+NAME=Pressure RR
+MIN=10
+MAX=50
+STEP=1
+POS_X=1
+POS_Y=4
+HELP=HELP_RR_PRESSURE
+
+/////////////////////////////////////////////////////
+;ALIGNMENT FRONT
+/////////////////////////////////////////////////////
+
+[DJ0_LENGTH_OFFSET_LF]
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Camber shim LF
+MIN=-50
+MAX=50
+STEP=1 ;1 = 0.1mm
+POS_X=0
+POS_Y=0
+HELP=HELP_LF_CAMBER
+
+[DJ0_LENGTH_OFFSET_RF]
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Camber shim RF
+MIN=-50
+MAX=50
+STEP=1 ;1 = 0.1mm
+POS_X=1
+POS_Y=0
+HELP=HELP_RF_CAMBER
+
+[STEER_JOINT_0_LENGTH_OFFSET_LF]
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Toe LF
+MIN=-100
+MAX=100
+STEP=1 ;1 = 0.1mm
+POS_X=0
+POS_Y=3
+HELP=HELP_LF_TOE
+
+[STEER_JOINT_0_LENGTH_OFFSET_RF]
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Toe RF
+MIN=-100
+MAX=100
+STEP=1 ;1 = 0.1mm
+POS_X=1
+POS_Y=3
+HELP=HELP_RF_TOE
+
+[SPRING_PRELOAD_LF_C0] ; spring gap flipped sign 0.1mm - can use preload inversely to gap a spring, in this case, "preload" actually is being used for the spring gap, hence the flipped value in the suspensions.ini
+SHOW_CLICKS=0 
+TAB=ALIGNMENT FRONT
+NAME=Spring Gap LF
+MIN=-2000
+MAX=2000
+STEP=1
+POS_X=0
+POS_Y=4
+HELP=HELP_HF_TRAVEL_RANGE
+EXT_CONTROLLER=setup_Susp_height_F.ini
+
+[SPRING_PRELOAD_RF_C0] ; spring gap flipped sign 0.1mm - can use preload inversely to gap a spring, in this case, "preload" actually is being used for the spring gap, hence the flipped value in the suspensions.ini
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Spring Gap RF
+MIN=-2000
+MAX=2000
+STEP=1
+POS_X=1
+POS_Y=4
+HELP=HELP_HF_TRAVEL_RANGE
+EXT_CONTROLLER=setup_Susp_height_F.ini
+
+[SPRING_RATE_LF_C0] ;C0 for coilover 0
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Spring Rate LF
+MIN=0
+MAX=350000
+STEP=1
+POS_X=0
+POS_Y=5
+HELP=Null
+
+[SPRING_RATE_RF_C0] ;C0 for coilover 0
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Spring Rate RF
+MIN=0
+MAX=350000
+STEP=1
+POS_X=1
+POS_Y=5
+HELP=Null
+
+[BUMPSTOP_GAP_LF_C0] ; rubber gap
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Bump Rubber Gap LF
+MIN=0  ;mm
+MAX=240 ;mm
+STEP=1 ;mm
+POS_X=0
+POS_Y=6
+HELP=HELP_HF_TRAVEL_RANGE
+
+[BUMPSTOP_GAP_RF_C0] ; rubber gap
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Bump Rubber Gap RF
+MIN=0  ;mm
+MAX=240 ;mm
+STEP=1 ;mm
+POS_X=1
+POS_Y=6
+HELP=HELP_HF_TRAVEL_RANGE
+
+[ARB_FRONT]
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=ARB Front
+MIN=0
+MAX=150000
+STEP=1
+POS_X=0.5
+POS_Y=7
+HELP=HELP_FRONT_ARB
+
+/////////////////////////////////////////////////////
+;ALIGNMENT REAR
+/////////////////////////////////////////////////////
+
+[TOE_OUT_LR]
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Toe LR
+MIN=-100
+MAX=100
+STEP=1
+POS_X=0
+POS_Y=0
+HELP=HELP_LR_TOE
+
+[TOE_OUT_RR]
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Toe RR
+MIN=-100
+MAX=100
+STEP=1
+POS_X=1
+POS_Y=0
+HELP=HELP_RR_TOE
+
+; [DJ3_LENGTH_OFFSET_LR]
+; SHOW_CLICKS=0
+; TAB=ALIGNMENT REAR
+; NAME=Camber EXC LR
+; MIN=-50
+; MAX=50
+; STEP=1 ;1 = 0.1mm
+; POS_X=0
+; POS_Y=1
+; HELP=HELP_LF_CAMBER
+
+; [DJ3_LENGTH_OFFSET_RR]
+; SHOW_CLICKS=0
+; TAB=ALIGNMENT REAR
+; NAME=Camber EXC RR
+; MIN=-50
+; MAX=50
+; STEP=1 ;1 = 0.1mm
+; POS_X=1
+; POS_Y=1
+; HELP=HELP_RF_CAMBER
+
+; [STEER_JOINT_0_LENGTH_OFFSET_LR]
+; SHOW_CLICKS=0
+; TAB=ALIGNMENT REAR
+; NAME=Toe LR
+; MIN=-100
+; MAX=100
+; STEP=1 ;1 = 0.1mm
+; POS_X=0
+; POS_Y=1
+; HELP=HELP_LR_TOE
+
+; [STEER_JOINT_0_LENGTH_OFFSET_RR]
+; SHOW_CLICKS=0
+; TAB=ALIGNMENT REAR
+; NAME=Toe RR
+; MIN=-100
+; MAX=100
+; STEP=1 ;1 = 0.1mm
+; POS_X=1
+; POS_Y=1
+; HELP=HELP_RR_TOE
+
+[SPRING_PRELOAD_LR_C0] ; spring gap flipped sign 0.1mm - can use preload inversely to gap a spring, in this case, "preload" actually is being used for the spring gap, hence the flipped value in the suspensions.ini
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Spring Gap LR
+MIN=-2000
+MAX=2000
+STEP=1
+POS_X=0
+POS_Y=2
+HELP=HELP_HF_TRAVEL_RANGE
+EXT_CONTROLLER=setup_Susp_height_R.ini
+
+[SPRING_PRELOAD_RR_C1] ; spring gap flipped sign 0.1mm - can use preload inversely to gap a spring, in this case, "preload" actually is being used for the spring gap, hence the flipped value in the suspensions.ini
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Spring Gap RR
+MIN=-2000
+MAX=2000
+STEP=1
+POS_X=1
+POS_Y=2
+HELP=HELP_HF_TRAVEL_RANGE
+EXT_CONTROLLER=setup_Susp_height_R.ini
+
+[SPRING_RATE_LR_C0]
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Spring Rate LF
+MIN=0
+MAX=300000
+STEP=1
+POS_X=0
+POS_Y=3
+HELP=Null
+
+[SPRING_RATE_RR_C1]
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Spring Rate RF
+MIN=0
+MAX=300000
+STEP=1
+POS_X=1
+POS_Y=3
+HELP=Null
+
+[BUMPSTOP_GAP_LR_C0] ; rubber gap
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Bump Rubber Gap LR
+MIN=0  ;mm
+MAX=240 ;mm
+STEP=1 ;mm
+POS_X=0
+POS_Y=4
+HELP=HELP_HF_TRAVEL_RANGE
+
+[BUMPSTOP_GAP_RR_C1] ; rubber gap
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Bump Rubber Gap RR
+MIN=0  ;mm
+MAX=240 ;mm
+STEP=1 ;mm
+POS_X=1
+POS_Y=4
+HELP=HELP_HF_TRAVEL_RANGE
+
+[ARB_REAR]
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=ARB Rear
+MIN=0
+MAX=70000
+STEP=1
+POS_X=0.5
+POS_Y=5
+HELP=HELP_FRONT_ARB
+
+/////////////////////////////////////////////////////
+;Dynamic
+/////////////////////////////////////////////////////
+
+[DIFF_POWER]
+SHOW_CLICKS=0
+TAB=Dynamic
+NAME=Diff Power
+MIN=2
+MAX=99
+STEP=1
+POS_X=0
+POS_Y=0
+HELP=HELP_DIFF_POWER
+; EXT_CONTROLLER=setup_ELSD.ini
+
+[DIFF_COAST]
+SHOW_CLICKS=0
+TAB=Dynamic
+NAME=Diff Coast
+MIN=2
+MAX=99
+STEP=1
+POS_X=1
+POS_Y=0
+HELP=HELP_DIFF_COAST
+; EXT_CONTROLLER=setup_ELSD.ini
+
+[DIFF_PRELOAD]
+SHOW_CLICKS=0
+TAB=Dynamic
+NAME=Diff Preload
+MIN=5
+MAX=120
+STEP=5
+POS_X=0.5
+POS_Y=1
+HELP=HELP_DIFF_PRELOAD
+
+[DAMPER_BUMP_LF_C0] ;v0.2+ the index now matches the suspensions ini index instead of the "true" index on the car. e.g. If there's a parity=0 damper at index 1 in the suspensions.ini, LF_1 will exist and RF_1 will not.
+SHOW_CLICKS=2
+TAB=DAMPERS
+NAME=Bump LF
+MIN=0
+MAX=2
+STEP=1
+DEFAULT=1
+POS_X=0
+POS_Y=0
+HELP=HELP_LF_DAMPER_BUMP
+EXT_CONTROLLER=setup_Susp_dampers_mode.ini
+
+[DAMPER_BUMP_RF_C0] ;v0.2+ the index now matches the suspensions ini index instead of the "true" index on the car. e.g. If there's a parity=0 damper at index 1 in the suspensions.ini, LF_1 will exist and RF_1 will not.
+SHOW_CLICKS=2
+TAB=DAMPERS
+NAME=Bump RF
+MIN=0
+MAX=2
+STEP=1
+DEFAULT=1
+POS_X=1
+POS_Y=0
+HELP=HELP_LF_DAMPER_BUMP
+EXT_CONTROLLER=setup_Susp_dampers_mode.ini
+
+[DAMPER_BUMP_LR_C0] ;v0.2+ the index now matches the suspensions ini index instead of the "true" index on the car. e.g. If there's a parity=0 damper at index 1 in the suspensions.ini, LF_1 will exist and RF_1 will not.
+SHOW_CLICKS=2
+TAB=DAMPERS
+NAME=Bump LR
+MIN=0
+MAX=2
+STEP=1
+DEFAULT=1
+POS_X=0
+POS_Y=1
+HELP=HELP_LF_DAMPER_BUMP
+EXT_CONTROLLER=setup_Susp_dampers_mode.ini
+
+[DAMPER_BUMP_RR_C0] ;v0.2+ the index now matches the suspensions ini index instead of the "true" index on the car. e.g. If there's a parity=0 damper at index 1 in the suspensions.ini, LF_1 will exist and RF_1 will not.
+SHOW_CLICKS=2
+TAB=DAMPERS
+NAME=Bump RR
+MIN=0
+MAX=2
+STEP=1
+DEFAULT=1
+POS_X=1
+POS_Y=1
+HELP=HELP_LF_DAMPER_BUMP
+EXT_CONTROLLER=setup_Susp_dampers_mode.ini
+
+[DAMPER_REBOUND_LF_C0] ;v0.2+ the index now matches the suspensions ini index instead of the "true" index on the car. e.g. If there's a parity=0 damper at index 1 in the suspensions.ini, LF_1 will exist and RF_1 will not.
+SHOW_CLICKS=2
+TAB=DAMPERS
+NAME=Rebound LF
+MIN=0
+MAX=2
+STEP=1
+DEFAULT=1
+POS_X=0
+POS_Y=3
+HELP=HELP_LF_DAMPER_BUMP
+EXT_CONTROLLER=setup_Susp_dampers_mode.ini
+
+[DAMPER_REBOUND_RF_C0] ;v0.2+ the index now matches the suspensions ini index instead of the "true" index on the car. e.g. If there's a parity=0 damper at index 1 in the suspensions.ini, LF_1 will exist and RF_1 will not.
+SHOW_CLICKS=2
+TAB=DAMPERS
+NAME=Rebound RF
+MIN=0
+MAX=2
+STEP=1
+DEFAULT=1
+POS_X=1
+POS_Y=3
+HELP=HELP_LF_DAMPER_BUMP
+EXT_CONTROLLER=setup_Susp_dampers_mode.ini
+
+[DAMPER_REBOUND_LR_C0] ;v0.2+ the index now matches the suspensions ini index instead of the "true" index on the car. e.g. If there's a parity=0 damper at index 1 in the suspensions.ini, LF_1 will exist and RF_1 will not.
+SHOW_CLICKS=2
+TAB=DAMPERS
+NAME=Rebound LR
+MIN=0
+MAX=2
+STEP=1
+DEFAULT=1
+POS_X=0
+POS_Y=4
+HELP=HELP_LF_DAMPER_BUMP
+EXT_CONTROLLER=setup_Susp_dampers_mode.ini
+
+[DAMPER_REBOUND_RR_C0] ;v0.2+ the index now matches the suspensions ini index instead of the "true" index on the car. e.g. If there's a parity=0 damper at index 1 in the suspensions.ini, LF_1 will exist and RF_1 will not.
+SHOW_CLICKS=2
+TAB=DAMPERS
+NAME=Rebound RR
+MIN=0
+MAX=2
+STEP=1
+DEFAULT=1
+POS_X=1
+POS_Y=4
+HELP=HELP_LF_DAMPER_BUMP
+EXT_CONTROLLER=setup_Susp_dampers_mode.ini
