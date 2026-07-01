@@ -1,0 +1,373 @@
+[DISPLAY_METHOD]
+SHOW_CLICKS=1
+
+[GEARS]
+USE_GEARSET=1
+
+/////////////////////////////////////////////////////
+;AERO
+/////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////////
+;TYRES
+/////////////////////////////////////////////////////
+
+[PRESSURE_LF]
+SHOW_CLICKS=0
+TAB=TYRES
+NAME=Pressure LF
+MIN=15
+MAX=60
+STEP=1
+POS_X=0
+POS_Y=2
+HELP=HELP_LF_PRESSURE
+
+[PRESSURE_RF]
+SHOW_CLICKS=0
+TAB=TYRES
+NAME=Pressure RF
+MIN=15
+MAX=60
+STEP=1
+POS_X=1
+POS_Y=2
+HELP=HELP_RF_PRESSURE
+
+[PRESSURE_LR]
+SHOW_CLICKS=0
+TAB=TYRES
+NAME=Pressure LR
+MIN=15
+MAX=60
+STEP=1
+POS_X=0
+POS_Y=4
+HELP=HELP_LR_PRESSURE
+
+[PRESSURE_RR]
+SHOW_CLICKS=0
+TAB=TYRES
+NAME=Pressure RR
+MIN=15
+MAX=60
+STEP=1
+POS_X=1
+POS_Y=4
+HELP=HELP_RR_PRESSURE
+
+/////////////////////////////////////////////////////
+;SUSPENSION Front
+/////////////////////////////////////////////////////
+
+[DJ0_LENGTH_OFFSET_LF]
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Strut Camber LF
+MIN=-100
+MAX=100
+STEP=1 ;1 = 0.1mm
+POS_X=0
+POS_Y=0
+HELP=HELP_LF_CAMBER
+
+[DJ0_LENGTH_OFFSET_RF]
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Strut Camber RF
+MIN=-100
+MAX=100
+STEP=1 ;1 = 0.1mm
+POS_X=1
+POS_Y=0
+HELP=HELP_RF_CAMBER
+
+[DJ1_LENGTH_OFFSET_LF]
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Strut Caster LF
+MIN=-100
+MAX=100
+STEP=1 ;1 = 0.1mm
+POS_X=0
+POS_Y=1
+HELP=HELP_LF_CAMBER
+
+[DJ1_LENGTH_OFFSET_RF]
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Strut Caster RF
+MIN=-100
+MAX=100
+STEP=1 ;1 = 0.1mm
+POS_X=1
+POS_Y=1
+HELP=HELP_RF_CAMBER
+
+[STEER_JOINT_0_LENGTH_OFFSET_LF]
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Steer (Toe 0.1mm)
+MIN=-100
+MAX=300
+STEP=1 ;1 = 0.1mm
+POS_X=0
+POS_Y=2
+HELP=HELP_LF_TOE
+
+[STEER_JOINT_0_LENGTH_OFFSET_RF]
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Steer (Toe 0.1mm)
+MIN=-100
+MAX=300
+STEP=1 ;1 = 0.1mm
+POS_X=1
+POS_Y=2
+HELP=HELP_RF_TOE
+
+[SPRING_PRELOAD_FORCE_LF_C0] ; spring gap flipped sign 0.1mm - can use preload inversely to gap a spring, in this case, "preload" actually is being used for the spring gap, hence the flipped value in the suspensions.ini
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Spring Preload
+MIN=0
+MAX=10000
+STEP=10
+POS_X=0
+POS_Y=3
+HELP=HELP_HF_TRAVEL_RANGE
+
+[SPRING_PRELOAD_FORCE_RF_C0] ; spring gap flipped sign 0.1mm - can use preload inversely to gap a spring, in this case, "preload" actually is being used for the spring gap, hence the flipped value in the suspensions.ini
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Spring Preload
+MIN=0
+MAX=10000
+STEP=10
+POS_X=1
+POS_Y=3
+HELP=HELP_HF_TRAVEL_RANGE
+
+[SPRING_RATE_LF_C0] ;C0 for coilover 0
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Spring Rate LF
+MIN=0
+MAX=250000
+STEP=200
+POS_X=0
+POS_Y=4
+HELP=Null
+
+[SPRING_RATE_RF_C0] ;C0 for coilover 0
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Spring Rate RF
+MIN=0
+MAX=250000
+STEP=200
+POS_X=1
+POS_Y=4
+HELP=Null
+
+[BUMPSTOP_GAP_LF_C1] ; rubber gap
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Bump Rubber Gap
+MIN=0  ;mm
+MAX=240 ;mm
+STEP=1 ;mm
+POS_X=0
+POS_Y=5
+HELP=HELP_HF_TRAVEL_RANGE
+
+[BUMPSTOP_GAP_RF_C1] ; rubber gap
+SHOW_CLICKS=0
+TAB=ALIGNMENT FRONT
+NAME=Bump Rubber Gap
+MIN=0  ;mm
+MAX=240 ;mm
+STEP=1 ;mm
+POS_X=1
+POS_Y=5
+HELP=HELP_HF_TRAVEL_RANGE
+
+/////////////////////////////////////////////////////
+;SUSPENSION
+/////////////////////////////////////////////////////
+
+
+[STEER_JOINT_0_LENGTH_OFFSET_LR]
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Steer (Toe 0.1mm)
+MIN=-100
+MAX=300
+STEP=1 ;1 = 0.1mm
+POS_X=0
+POS_Y=1
+HELP=HELP_LR_TOE
+
+[STEER_JOINT_0_LENGTH_OFFSET_RR]
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Steer (Toe 0.1mm)
+MIN=-100
+MAX=300
+STEP=1 ;1 = 0.1mm
+POS_X=1
+POS_Y=1
+HELP=HELP_RR_TOE
+
+[SPRING_PRELOAD_FORCE_LR_C0] ; spring gap flipped sign 0.1mm - can use preload inversely to gap a spring, in this case, "preload" actually is being used for the spring gap, hence the flipped value in the suspensions.ini
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Spring Preload
+MIN=0
+MAX=10000
+STEP=10
+POS_X=0
+POS_Y=2
+HELP=HELP_HF_TRAVEL_RANGE
+
+[SPRING_PRELOAD_FORCE_RR_C0] ; spring gap flipped sign 0.1mm - can use preload inversely to gap a spring, in this case, "preload" actually is being used for the spring gap, hence the flipped value in the suspensions.ini
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Spring Preload
+MIN=0
+MAX=10000
+STEP=10
+POS_X=1
+POS_Y=2
+HELP=HELP_HF_TRAVEL_RANGE
+
+[SPRING_RATE_LR_C0] ;C0 for coilover 0
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Spring Rate LF
+MIN=0
+MAX=250000
+STEP=200
+POS_X=0
+POS_Y=3
+HELP=Null
+
+[SPRING_RATE_RR_C0] ;C0 for coilover 0
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Spring Rate RF
+MIN=0
+MAX=250000
+STEP=200
+POS_X=1
+POS_Y=3
+HELP=Null
+
+[BUMPSTOP_GAP_LR_C1] ; rubber gap
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Bump Rubber Gap
+MIN=0  ;mm
+MAX=240 ;mm
+STEP=1 ;mm
+POS_X=0
+POS_Y=4
+HELP=HELP_HF_TRAVEL_RANGE
+
+[BUMPSTOP_GAP_RR_C1] ; rubber gap
+SHOW_CLICKS=0
+TAB=ALIGNMENT REAR
+NAME=Bump Rubber Gap
+MIN=0  ;mm
+MAX=240 ;mm
+STEP=1 ;mm
+POS_X=1
+POS_Y=4
+HELP=HELP_HF_TRAVEL_RANGE
+
+/////////////////////////////////////////////////////
+;DRIVETRAIN
+/////////////////////////////////////////////////////
+
+[DIFF_POWER]
+SHOW_CLICKS=0
+TAB=DRIVETRAIN
+NAME=Diff Power
+MIN=25
+MAX=50
+STEP=5
+POS_X=0.5
+POS_Y=4
+HELP=HELP_DIFF_POWER
+
+[DIFF_COAST]
+SHOW_CLICKS=0
+TAB=DRIVETRAIN
+NAME=Diff Coast
+MIN=25
+MAX=50
+STEP=5
+POS_X=0.5
+POS_Y=5
+HELP=HELP_DIFF_COAST
+
+[DIFF_PRELOAD]
+SHOW_CLICKS=0
+TAB=DRIVETRAIN
+NAME=Diff Preload
+MIN=5
+MAX=70
+STEP=5
+POS_X=0.5
+POS_Y=6
+HELP=HELP_DIFF_PRELOAD
+
+/////////////////////////////////////////////////////
+;Torsions
+/////////////////////////////////////////////////////
+
+[ARB_FRONT]
+SHOW_CLICKS=0
+TAB=TORSIONS
+NAME=Front ARB
+MIN=0000
+MAX=50000
+STEP=2000
+POS_X=0.5
+POS_Y=0
+HELP=HELP_FRONT_ARB
+
+[ARB_REAR]
+SHOW_CLICKS=0
+TAB=TORSIONS
+NAME=Rear ARB
+MIN=0000
+MAX=50000
+STEP=2000
+POS_X=0.5
+POS_Y=2
+HELP=HELP_FRONT_ARB
+
+; [TORSION_RATE_LR_1] ;per corner, same indices as supension.ini
+; SHOW_CLICKS=0
+; TAB=TORSIONS
+; NAME=Rear ARB
+; MIN=0  ;
+; MAX=250 ;
+; STEP=1
+; POS_X=0.5
+; POS_Y=1
+; HELP=HELP_LF_WHEELRATE
+
+; [TORSION_RATE_LR_0] ;per corner, same indices as supension.ini
+; SHOW_CLICKS=0
+; TAB=TORSIONS
+; NAME=Chassis flex
+; MIN=300  ;
+; MAX=50000 ;
+; STEP=1000
+; POS_X=0.5
+; POS_Y=3
+; HELP=HELP_LF_WHEELRATE
